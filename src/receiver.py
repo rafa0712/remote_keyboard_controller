@@ -9,11 +9,5 @@ while True:
     data = socket.recv(2048)
     data = pickle.loads(data)
     chosen = Handler(data)
-    #
-    type = data['type']
     key = data['key']
-    if (type == 'press'):
-        
-        kb.press(key)
-    else:
-        kb.release(key)
+    chosen = Handler(data)
