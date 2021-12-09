@@ -11,3 +11,7 @@ while True:
     chosen = Handler(data)
     key = data['key']
     chosen = Handler(data)
+    if chosen:
+        chosen(key)
+
+
